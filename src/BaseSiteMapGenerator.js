@@ -90,7 +90,7 @@ export default class BaseSiteMapGenerator {
 
         node = {
             url: [
-                { loc: url },
+                { loc: url[url.length - 1] === `/` ? url : `${url}/` },
                 {
                     lastmod: moment(
                         this.getLastModifiedForDatum(datum),
