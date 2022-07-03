@@ -103,7 +103,7 @@ var BaseSiteMapGenerator = /*#__PURE__*/function () {
     var imgNode;
     node = {
       url: [{
-        loc: url[url.length - 1] === "/" ? url : `${url}/`
+        loc: url
       }, {
         lastmod: (0, _moment.default)(this.getLastModifiedForDatum(datum), this.ISO8601_FORMAT).toISOString()
       }]
